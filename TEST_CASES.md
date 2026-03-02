@@ -1,9 +1,11 @@
-## User Registration & Authentication
 
-| TC ID | Module | Priority | Preconditions | Test Data | Steps | Expected Result | Actual Result | Status | Comments |
-|-------|--------|----------|--------------|-----------|-------|-----------------|--------------|--------|----------|
-| TC-AUTH-01 | Authentication | High | NA | Valid user details | 1. Enter valid details <br> 2. Click Register | User account created successfully |  | Not Run |  |
-| TC-AUTH-02 | Authentication | High | Registered user | Valid email & password | 1. Enter credentials <br> 2. Click Login | User logged in successfully |  | Not Run |  |
-| TC-AUTH-03 | Authentication | High | User logged in | Same credentials | Login from another device | Previous session should logout automatically |  | Not Run |  |
-| TC-AUTH-04 | Authentication | High | NA | Invalid password | Enter wrong password | Proper error message displayed |  | Not Run |  |
-| TC-AUTH-05 | Authentication | Medium | NA | Empty fields | Click login without data | Validation message shown |  | Not Run |  |
+## Home Page - Test Cases
+
+| TC ID | Module | Priority | Test Scenario | Steps | Expected Result | Actual Result | Status | Comments |
+|-------|--------|----------|--------------|-------|-----------------|--------------|--------|----------|
+| SPR001 | Home Page | High | Verify home page loads successfully | Open website URL | Home page loads without errors |  | Not Run |  |
+| SPR002 | Home Page | High | Verify navigation menu visibility | Check main menu items | All menu items (Home, Products, Yoga Packages, About Us, Contact Us) are visible |  | Not Run |  |
+| SPR003 | Home Page | High | Verify navigation redirection | Click each navigation link | Each link redirects to the correct respective page |  | Not Run |  |
+| SPR004 | Home Page | High | Verify Login/Register button functionality | Click Login/Register button | User is redirected to Login page successfully |  | Not Run |  |
+| SPR005 | Home Page | High | Verify page layout and UI stability | Scroll full page and observe layout | No UI break, no broken images, page displays correctly |  | Not Run |  |
+| SPR006 | Home Page | High | Verify hero banner text does not overlap | Observe hero/banner section on page load | Only one slide text should be visible at a time without overlapping |  | Not Run | Check slider layering/z-index issue |
